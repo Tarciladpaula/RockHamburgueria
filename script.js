@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addMoreButton = document.getElementById('addMore');
     const cancelOrderButton = document.getElementById('cancelOrder');
     const cartCountElement = document.getElementById('cart-count');
+    const finalizeOrderButton = document.getElementById('finalizeOrder');
     const totalAmountElement = document.getElementById('totalAmount');
 
     const cart = [];
@@ -18,6 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCart();
         orderModal.style.display = 'none';
     });
+
+    // Esvazia o carrinho e fecha o modal ao finalizar o pedido
+ finalizeOrderButton.addEventListener('click', () => {
+    // Submete o pedido (aqui você pode adicionar lógica para enviar o pedido ao servidor)
+    alert('Pedido enviado!');
+
+    // Esvazia o carrinho
+    cart.length = 0;
+    updateCart();
+
+    // Fecha o modal
+    orderModal.style.display = 'none';
+});
+
 
     // Exibe o modal do carrinho
     cartIcon.addEventListener('click', () => {
@@ -135,3 +150,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+ 
