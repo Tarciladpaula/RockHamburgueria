@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Burguer - Hamburgueria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="header-title">
+        <h1>Rock Burguer</h1>
+    </div> 
+
+    <div class="red-line">
+        <img src="logotype-removebg-preview.png" alt="logo" id="logo">
+        <img src="carrin.png" alt="Ícone do Carrinho" id="cart-icon">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </div>
+
+    
+     
+    <header>
+        <div class="overlay">
+            
+            <p id="frase">
+                <span class="frase-linha1">Transforme sua fome</span>
+                <span class="frase-linha2">em uma experiência épica </span>
+                <span class="frase-linha3">com nossos hambúrgueres artesanais</span>
+            </p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Rockburguers</h2>
+            <div class="menu">
+                <!-- Lista de Hamburguers-->
+                <div class="item"
+                     data-name="Calabresa" data-price="18.00">
+                    <label for="pizza1">
+                        <img src="calabresa.jpg" alt="Calabresa">
+                        <strong>Burger Bliss</strong><br>
+                        Pão de hambúrguer, hambúrguer de carne bovina, alface, tomate, cebola roxa, queijo cheddar, ketchup, maionese, picles.<br>
+                        R$ 18,00
+                        
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Portuguesa" data-price="20.00">
+                    <label for="pizza2">
+                        <img src="portuguesa.jpg" alt="Portuguesa">
+                        <strong>Rock 'n' Burgers</strong><br>
+                        Ingredientes: Pão brioche, hambúrguer de carne bovina, queijo cheddar, cebola caramelizada, bacon crocante, molho barbecue, alface.<br>
+                        R$ 20,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Marguerita" data-price="21.00">
+                    <label for="pizza3">
+                        <img src="marguerita.jpg" alt="Marguerita">
+                        <strong>Burguer Haven</strong><br>
+                        Pão integral, hambúrguer de carne suína, queijo suíço, abacaxi grelhado, rúcula, maionese de limão.<br>
+                        R$ 21,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Frango com Catupiry" data-price="15.00">
+                    <label for="pizza4">
+                        <img src="ham4.jpg" alt="Frango com Catupiry">
+                        <strong>The Burger Lab</strong><br>
+                        Pão de hambúrguer, filé de frango empanado e crocante, alface americana, tomate, maionese de ervas, queijo cheddar.<br>
+                        R$ 15,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Quatro Queijos" data-price="19.00">
+                    <label for="pizza5">
+                        <img src="vegan.jpg" alt="Quatro Queijos">
+                        <strong>Epic Burger Joint</strong><br>
+                        Pão vegano, hambúrguer de grão-de-bico, abacate, rúcula, cebola roxa, tomate, maionese vegana de alho.<br>
+                        R$ 19,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Pepperoni" data-price="24.00">
+                    <label for="pizza6">
+                        <img src="hamb4.jpg" alt="Pepperoni">
+                        <strong>Grill & Thrill</strong><br>
+                        Pão australiano, hambúrguer de cordeiro, queijo feta, cebola caramelizada, rúcula, molho de iogurte com hortelã.<br>
+                        R$ 24,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Sessão de Acompanhamento -->
+
+                <div class="container">
+                    <section class="section">
+                        <h2>Acompanhamentos</h2>
+                        <div class="menu">
+                <div class="item" data-name="Atum" data-price="7.50">
+                    <label for="pizza7">
+                        <img src="fritas.jpg" alt="Atum">
+                        <strong>Rock Fritas</strong>
+                        R$ 7,50
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Palmito" data-price="9.40">
+                    <label for="pizza8">
+                        <img src="cebolas.jpg" alt="Palmito">
+                        <strong>Cebolas Empanadas</strong>
+                        R$ 9,40
+
+                       <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item" data-name="Bacon" data-price="12.50">
+                    <label for="pizza9">
+                        <img src="chiken.jpg" alt="Bacon">
+                        <strong>Chiken</strong>
+                        R$ 12,50
+
+                       <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+
+                </div>
+            
+        <!-- Sessão de Bebidas -->
+
+            <div class="container">
+                <section class="section">
+                    <h2>Bebidas</h2>
+                    <div class="menu">
+                        <div class="item"
+                    data-name="Água" data-price="2.50">
+                    <label for="Água">
+                        <img src="water.webp" alt="Água">
+                        <strong>Água Mineral</strong>
+                        R$ 2,50
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                </label>
+                        </div>
+
+                    <div class="item"
+                    data-name="Guaraná" data-price="5.00">
+                    <label for="Guaraná">
+                        <img src="guarana.jpg" alt="Guaraná">
+                        <strong>Guaraná</strong>
+                        R$ 5,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                </label>
+                    </div>
+
+                    <div class="item"
+                    data-name="Cola Cola" data-price="7.00">
+                    <label for="Coca Cola">
+                        <img src="coca cola.webp" alt="Coca Cola">
+                        <strong>Coca Cola</strong>
+                        R$ 7,00
+
+                        <div class="quantity">
+                            <label for="quantity1">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <div class="quantity-decrement">-</div>
+                                <input type="text" id="quantity1" name="quantity" min="1" value="1" class="quantity-input">
+                                <div class="quantity-increment">+</div>
+                            </div>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </label>
+                </div>
+            </section>
+            
+        <!-- Modal para finalização do pedido -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Finalizar Pedido</h2>
+                <div id="orderSummary"></div>
+                <p id="totalAmount">Total: R$ 0,00</p>
+                <form id="orderForm">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" required><br>
+                    <label for="payment">Forma de Pagamento:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="credit">Cartão de Crédito</option>
+                        <option value="debit">Cartão de Débito</option>
+                        <option value="cash">Pix</option>
+                    </select><br>
+                    <button type="submit">Finalizar Pedido</button>
+                    <button type="button" id="addMore">Adicionar Mais Itens</button>
+                    <button type="button" id="cancelOrder">Cancelar Pedido</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
